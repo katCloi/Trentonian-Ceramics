@@ -9,11 +9,27 @@
 	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
+		
+		body { 
+   			margin: auto;
+    		padding: 0 15px;
+    		max-width: 1100px;
+		}
 		model-viewer{
 			width:500px;
         	height: 500px;
-       		margin-left: 50px;
-      }
+			
+     	}
+		
+		.bg {
+		
+			background-color:#E8DFD1 ;
+			height:200px;
+			margin-left:-50%;
+			margin-right: -50%;
+	
+		}
+		
 		h1{
 			text-align: center;
 			font-family: 'Cinzel', serif;
@@ -24,12 +40,79 @@
 			font-family: 'Merriweather', serif;
 			font-size: 20px;
 			color: grey;
+			padding-bottom: 50px;
+		}
+		
+		h3{
+			font-family: 'Merriweather', serif;
+			font-style:italic;
+			font-size: 20px;
+			color: black;
+		}
+		
+		p{
+			font-family: 'Merriweather', serif;
+			font-style:italic;
+			font-size: 15px;
+			color: darkgray;
+/*			text-align: left;*/
+		}
+		
+		.column1 {
+			flex:50%;
+  			height: 500px;
+		}
+		.column2 {
+			flex:50%;
+  			height: 500px;
+		}
+		.description {
+			text-align: center;
+  			vertical-align: middle;
+			margin-top: 30%;
+		}
+		.row {
+			position:relative;
+  			display:flex;
+		}
+		
+		
+		
+		@media screen and (max-width: 800px){
+			.column1{
+				display:block;
+				margin: 0 auto;
+			}
+			.description{
+				margin-top: 5%;
+			}
+			.row{
+				flex-direction:column;
+			}
+
 		}
     </style>
   </head>
   <body>
+	  <div class = "bg">
     <h1> Trentonian Ceramics </h1>
 	  <h2> Showcasing Interactive 3D Models of Artifacts from the Trenton Free Public Library</h2>
-    <model-viewer src="Plate.glb" alt="plate1" camera-controls auto-rotate></model-viewer>
+		  </div>
+	  <br><br>
+	  <div class = "row">
+	  	<div class = "column1">
+		     <model-viewer src="Plate.glb" alt="plate1" camera-controls auto-rotate></model-viewer>
+		  </div>
+		  	<div class = "column2">
+				<div class = "description">
+		  	<h3> The Old Barracks Plate</h3>
+				
+				<p> Description
+				</p>
+					</div>
+		  </div>
+	  </div>
+	   
+
   </body>
 </html>
