@@ -22,9 +22,8 @@
      	}
 		
 		.bg {
-		
 			background-color:#E8DFD1 ;
-			height:200px;
+			height:270px;
 			margin-left:-50%;
 			margin-right: -50%;
 	
@@ -40,13 +39,13 @@
 			font-family: 'Merriweather', serif;
 			font-size: 20px;
 			color: grey;
-			padding-bottom: 50px;
+/*			padding-bottom: 50px;*/
 		}
 		
 		h3{
 			font-family: 'Merriweather', serif;
 			font-style:italic;
-			font-size: 20px;
+			font-size: 30px;
 			color: black;
 		}
 		
@@ -54,8 +53,8 @@
 			font-family: 'Merriweather', serif;
 			font-style:italic;
 			font-size: 15px;
-			color: darkgray;
-/*			text-align: left;*/
+			color: #545454;
+			text-align:justify;
 		}
 		
 		.column1 {
@@ -69,16 +68,42 @@
 		.description {
 			text-align: center;
   			vertical-align: middle;
-			margin-top: 30%;
+			margin-top: 25%;
+			margin-left:10%;
+			margin-right: 10%;
+			
 		}
 		.row {
 			position:relative;
   			display:flex;
+			padding-bottom: 150px;
 		}
 		
+		.container {
+			padding: 15px;
+			background-color: #EBE8E2;
+			border-style: outset;
+  			border-width: 7px;
+  			border-color: #F3F1ED;
+		}
 		
+		.button {
+			font-family: 'Merriweather', serif;
+  			background-color: #0E125C;
+  			border: none;
+  			color: white;
+  			padding: 10px 25px;
+  			text-align: center;
+  			font-size: 16px;
+  			margin: auto;
+  			opacity: 0.6;
+  			transition: 0.3s;
+  			display:block;
+  			text-decoration: none;
+  			cursor: pointer;
+		}	
 		
-		@media screen and (max-width: 800px){
+		@media screen and (max-width: 900px){
 			.column1{
 				display:block;
 				margin: 0 auto;
@@ -95,24 +120,46 @@
   </head>
   <body>
 	  <div class = "bg">
+		  <br>
     <h1> Trentonian Ceramics </h1>
 	  <h2> Showcasing Interactive 3D Models of Artifacts from the Trenton Free Public Library</h2>
+	<button onclick="window.open('https://trentonlib.org/');" class="button"> More Info </button>
 		  </div>
 	  <br><br>
 	  <div class = "row">
 	  	<div class = "column1">
 		     <model-viewer src="Plate.glb" alt="plate1" camera-controls auto-rotate></model-viewer>
+			 <p style = "color:darkgray"> <i> Model by David Calva </i></p>
 		  </div>
 		  	<div class = "column2">
 				<div class = "description">
-		  	<h3> The Old Barracks Plate</h3>
+					<div class = "container">
+		  	<h3> Scammell Plate </h3>
 				
-				<p> Description
+				<p> These plates were made in 1929 by Scammell China Company. This company has been around since the late 1800s, up until the 1950s. 1929 was the 250th anniversary of the founding of Trenton. The first European settlement in what would become Trenton was established by Quakers in 1679, in the region then called the Falls of the Delaware. Many of these plates were made, and can be found for collectors to purchase online on third party seller sites.
 				</p>
+				
+					</div>
 					</div>
 		  </div>
 	  </div>
-	   
-
+	  
+	  <div class = "row">
+	  	<div class = "column1">
+		     <model-viewer src="Hand.glb" alt="hand1" camera-controls auto-rotate></model-viewer>
+			<p style = "color:darkgray"> <i> Model by David Calva </i></p>
+		  </div>
+		  	<div class = "column2">
+				<div class = "description">
+					<div class = "container">
+		  	<h3> Glove Mold </h3>
+				
+				<p> These glove molds were made throughout the 60s, 70s, and 80s. They came in all different sizes from 6 ½ inch to 18 inch molds. They were made by GENERAL PORCELAIN MANUFACTURING CO. General Porcelain  Manufacturing co was established in Trenton in 1939, but they were called Mercer Porcelain Company before that. Some of these gloves would end up on the hands of Astronauts in 1964.
+				</p>
+					</div>
+				</div>
+		  </div>
+	  </div>
+		
   </body>
 </html>
