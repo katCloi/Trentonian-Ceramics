@@ -1,6 +1,9 @@
 # Trentoniana-Ceramics
-Link: https://katcloi.github.io/Trentonian-Ceramics/
+Website Link: https://katcloi.github.io/Trentonian-Ceramics/
 
-Contributers: David Calva, Katrina Gutierrez, Bryan Schantz
+*Contributers: 
+3D Modeler: David Calva
+Web Designer: Katrina Gutierrez 
+Researcher: Bryan Schantz*
 
 **To make contributions, contact katcgutierrez@gmail.com**
